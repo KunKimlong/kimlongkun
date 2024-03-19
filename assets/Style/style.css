@@ -26,18 +26,14 @@
     align-items: center;
     position: relative;
 }
-.blog-about .profile{
-    width: 400px;
-    height: 400px;
+.blog-about .profile,.blog-resume .profile{
     border-radius: 50%;
     overflow: hidden;
 }
-.blog-about .profile:hover{
-    box-shadow: 1px 1px 5px gray;
-}
-.blog-about .profile img{
-    width: 100%;
-    height: 100%;
+
+.blog-about .profile img,.blog-resume .profile img{
+    width: 100% ;
+    height: 100% ;
     object-fit: cover;
 }
 
@@ -59,11 +55,94 @@
 }
 .blog-about .detail p.description{
     letter-spacing: 2px;
-    
     word-wrap: break-word;
     font-family: "Kode Mono", monospace;
     color: white;
 }
+
+
+
+.blog-resume{
+    position: relative;
+    padding: 30px 50px !important;
+}
+.blog-resume .profile{
+    position: sticky;
+    top: 200px;
+}
+.blog-resume .part .part-title{
+    text-transform: uppercase;
+    border-bottom:5px double black;
+}
+.blog-resume .part .part-description{
+    font-size: 20px;
+}
+.blog-resume .part .part-description .part-location{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.blog-resume .part .part-description .part-location li{
+    width: 50%;
+    margin: 5px 0;
+}
+.blog-resume .part .part-description .part-school li{
+    width: 100%;
+    font-weight: bold;
+    color: black;
+}
+
+.blog-resume .part .part-description .part-location li ul{
+    list-style: none;
+}
+.blog-resume .part .part-description .part-location li ul li{
+    font-weight: normal;
+}
+.blog-resume .part .part-description .part-location li ul li:last-child{
+    color: gray;
+    font-family: "My Soul", cursive;
+}
+.blog-resume .part-expirence .part-description .part-location li ul li:first-child{
+    font-weight: bold;
+}
+.blog-resume .part-expirence .part-description .part-location li ul li:last-child{
+    color: black;
+    font-family: unset;
+}
+.blog-resume .part-skill .part-description .part-location li ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.blog-resume .part-skill .part-description .part-location li ul li{
+    width: 50%;
+    padding: 0 20px;
+}
+.blog-resume .part-skill .part-description .part-location li ul li:last-child{
+    color: black;
+    font-family: unset;
+}
+.blog-resume .part-skill .part-description .part-location li ul li .title{
+    text-align: center;
+}
+.blog-resume .part-skill .part-description .part-location li ul li .outside-gray{
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: gray;
+}
+.blog-resume .part-skill .part-description .part-location li ul li .outside-gray .inside-gray{
+    border-radius: 25px;
+    height: 100%;
+    background-color: #00FFFF;
+}
+
+
+
+
+
 
 @media (max-width: 575.99px) { 
     .navbar-collapse{
@@ -79,7 +158,7 @@
         align-items: center;
         transition: 0.8s;
     }
-    .blog-about .profile{
+    .blog-about .profile,.blog-resume .profile{
         width: 250px;
         height: 250px;
     }
@@ -109,7 +188,7 @@
         align-items: center;
         transition: 0.8s;
     }
-    .blog-about .profile{
+    .blog-about .profile,.blog-resume .profile{
         width: 250px;
         height: 250px;
     }
@@ -126,7 +205,7 @@
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-    .blog-about .profile{
+    .blog-about .profile,.blog-resume .profile{
         width:350px;
         height: 350px;
     }
@@ -154,7 +233,7 @@
     #show-navbar{
         display: none;
     }
-    .blog-about .profile{
+    .blog-about .profile,.blog-resume .profile{
         width:350px;
         height: 350px;
     }
@@ -169,9 +248,9 @@
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-    .blog-about .profile{
-        width: 500px;
-        height: 500px;
+    .blog-about .profile,.blog-resume .profile{
+        width: 400px;
+        height: 400px;
     }   
     .blog-about .detail .name{
         font-size: 50px;
