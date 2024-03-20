@@ -11,16 +11,16 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
             <a class="navbar-brand" href="#">KUN KIMLONG</a>
             <button class="btn btn-outline-secondary rounded-0" id="show-navbar"><i class="bi bi-justify-left"></i> </button>
             <div class="navbar-collapse">
               <ul class="navbar-nav me-auto mb-2 mx-auto">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">About</a>
+                  <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Resume</a>
+                  <a class="nav-link" href="#resume">Resume</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Contect</a>
@@ -29,8 +29,8 @@
           </div>
         </nav>
     </header>
-    <main>
-      <div class="blog-about container-fluid p-0 bg-dark">
+    <main  data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"  tabindex="0">
+      <div id="about" class="blog-about container-fluid p-0 bg-dark">
         <div class="row justify-content-between align-items-center">
           <div class="col-lg-6 my-md-5 col-sm-12 col-12 d-flex justify-content-center">
             <div class="profile">
@@ -49,7 +49,7 @@
           </div>
         </div>
       </div>
-      <div class="blog-resume container-fluid p-0 mt-3">
+      <div id="resume" class="blog-resume container-fluid p-0 mt-3">
         <div class="row w-100 justify-content-between">
           <div class="col-12 title">
             <h1 class="text-center">Resume</h1>
@@ -153,8 +153,15 @@
         </div>
       </div>
     </main>
-    <footer>
-
+    <footer class="bg-dark text-light">
+      <h4>You can contect me by:</h4>
+      <ul>
+        <li><a href="https://web.facebook.com/newboy.long" target="_blank"><i class="bi bi-facebook"></i> Facebook : Kun Kimlong</a></li>
+        <li><a href="https://www.instagram.com/newboylong/" target="_blank"><i class="bi bi-instagram"></i> Instagram : newboylong</a></li>
+        <li><a href="javascript:void(0)"><i class="bi bi-envelope-fill"></i> Email: kimlongkun2412@gmail.com</a></li>
+        <li><a href="https://t.me/Kun_KimLong"><i class="bi bi-telegram"></i> Telegram: គន់ គីមឡុង-KUN KIMLONG</a></li>
+      </ul>
+      <p class="text-center fs-4">@Develop by Kun Kimlong</p>
     </footer>
 </body>
 <script src="assets/Js/data.js"></script>
