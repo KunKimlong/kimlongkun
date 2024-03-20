@@ -4,7 +4,20 @@ $(document).ready(function(){
     // alert(heightNavbar)
     $('.blog-about').css('height','calc(100vh - '+heightNavbar+'px)');
     $('.blog-about').css('margin-top',heightNavbar+'px');
+    $('.link-contect').click(function(){
+        $(this).addClass('active')
+    });
     
+    $(window).on('scroll',function(){
+        var scrollPosition = $(document).scrollTop();
+        // console.log(scrollPosition);
+        if(scrollPosition<2237){
+            $('.link-contect').removeClass('active');
+        }
+        else{
+            $('.link-contect').addClass('active');
+        }
+    });
     console.log(skill);
     var txt = '';
     skill.forEach(el=>{

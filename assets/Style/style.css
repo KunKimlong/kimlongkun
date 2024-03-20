@@ -3,6 +3,10 @@
 :root{
     --bg-secondery-50:#EEEEEE;
 }
+*::selection{
+    background-color: limegreen;
+    color: white !important;
+}
 .navbar{
     position: fixed;
     z-index: 3;
@@ -10,12 +14,22 @@
     width: 100%;
     padding: 10px 30px ;
 }
-.nav-item:hover{
+.nav-item:hover .nav-link{
     text-decoration: underline;
 }
 .nav-link{
     font-size: 20px;
     margin: 0 10px;
+}
+.nav-item .nav-link.active{
+    color: red !important;
+    text-decoration: underline;
+}
+.nav-item .nav-link.link-contect.active{
+    background-color: lightblue;
+    color: white !important;
+    text-decoration: unset !important;
+    border-radius: 10px;
 }
 
 /* main */
@@ -144,7 +158,7 @@ footer ul{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 footer ul li{   
     margin: 20px;
@@ -166,12 +180,19 @@ footer ul li a i{
 
 
 @media (max-width: 575.99px) { 
+    .navbar-collapse a{
+        color: white !important;
+    }
+    .nav-item .nav-link.link-contect.active{
+        background-color: unset;
+        text-decoration: unset !important;
+    }
     .navbar-collapse{
         position: fixed;
         top: -100%;
         left: -100%;
         z-index: 1;
-        background-color: rgba(0, 89, 255, 0.451);
+        background-color: rgba(96, 96, 96, 0.451);
         width: 100vw;
         height: 100vh;
         display: flex;
@@ -179,6 +200,7 @@ footer ul li a i{
         align-items: center;
         transition: 0.8s;
     }
+   
     .blog-about .profile,.blog-resume .profile{
         width: 250px;
         height: 250px;
@@ -211,12 +233,19 @@ footer ul li a i{
 }
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
+    .navbar-collapse a{
+        color: white !important;
+    }
+    .nav-item .nav-link.link-contect.active{
+        background-color: unset;
+        text-decoration: unset !important;
+    }
     .navbar-collapse{
         position: fixed;
         top: -100%;
         left: -100%;
         z-index: 1;
-        background-color: rgba(0, 89, 255, 0.451);
+        background-color: rgba(96, 96, 96, 0.451);
         width: 100vw;
         height: 100vh;
         display: flex;
@@ -237,13 +266,12 @@ footer ul li a i{
     .blog-about .detail p.description{
         font-size:15px;
     }
-    footer ul li{
-        width: 100%;
-    }
+    
  }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
+    
     .blog-about .profile,.blog-resume .profile{
         width:350px;
         height: 350px;
@@ -255,6 +283,9 @@ footer ul li a i{
     .blog-about .detail p.description{
         font-size: 20px;
     }
+    footer {
+        padding: 20px 100px;
+    }
     footer ul li{
         width: 40%;
     }
@@ -262,6 +293,9 @@ footer ul li a i{
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+    .navbar-collapse a{
+        color: black !important;
+    }
     .navbar-collapse{
         position: unset;
         background-color:unset;
