@@ -45,10 +45,16 @@ $(document).ready(function(){
     $('#skill').html(txt)
 
     $('body').on('click','.bi-justify-left',function(){
-        $('.navbar-collapse').css('top','60px');
+        $('.navbar-collapse').css('top',heightNavbar+'px');
         $('.navbar-collapse').css('left','0');
         $('.bi-justify-left').addClass('bi-x-lg');
         $('.bi-justify-left').removeClass('bi-justify-left');
+    })
+    $('.navbar-collapse').click(function(){
+        $('.navbar-collapse').css('top','-100%');
+        $('.navbar-collapse').css('left','-100%');
+        $('.bi-x-lg').addClass('bi-justify-left');
+        $('.bi-x-lg').removeClass('bi-x-lg');
     })
     $('body').on('click','.bi-x-lg',function(){
         $('.navbar-collapse').css('top','-100%');
