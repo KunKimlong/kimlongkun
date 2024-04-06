@@ -26,7 +26,7 @@
     text-decoration: underline;
 }
 .nav-item .nav-link.link-contect.active{
-    background-color: lightblue;
+    background-color: lightblue !important;
     color: white !important;
     text-decoration: unset !important;
     border-radius: 10px;
