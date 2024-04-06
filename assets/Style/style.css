@@ -74,6 +74,15 @@
     color: white;
 }
 
+.blog-about .detail .description{
+    color: white;
+}
+.blog-about .detail button.description{
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 8px;
+    border: 1px solid white;
+}
 
 
 .blog-resume{
