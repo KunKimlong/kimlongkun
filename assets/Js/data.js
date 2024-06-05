@@ -75,12 +75,28 @@ const skill = [
                 percent:60
             },
             {
+                language:'Express Js',
+                percent:80
+            },
+            {
+                language:'Nest Js',
+                percent:20
+            },
+            {
                 language:'C#',
                 percent:50
             },
             {
                 language:'Java',
-                percent:20
+                percent:50
+            },
+            {
+                language:'ASP.net',
+                percent:40
+            },
+            {
+                language:'Java Spring Boot',
+                percent:70
             },
         ]
     },
